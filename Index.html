@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anemia Awareness Initiative</title>
+
+<style>
+
+body{
+font-family: 'Segoe UI', Arial;
+margin:0;
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#b71c1c,#ef5350);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+nav{
+background:#222;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffb3b3;
+}
+
+.container{
+width:85%;
+margin:auto;
+padding:50px 0;
+}
+
+h2{
+color:#b71c1c;
+margin-bottom:15px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+flex:1;
+min-width:250px;
+}
+
+.stats{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:25px;
+border-radius:10px;
+flex:1;
+min-width:200px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.stat h3{
+font-size:35px;
+color:#b71c1c;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+.quiz{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+button{
+background:#b71c1c;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#7f0000;
+}
+
+form input,form textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Anemia Awareness Initiative</h1>
+<p>Student-led campaign promoting nutrition, screening, and education</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#impact">Impact</a>
+<a href="#gallery">Gallery</a>
+<a href="#quiz">Quiz</a>
+<a href="#volunteer">Volunteer</a>
+</nav>
+
+<div class="container">
+
+<section id="about">
+<h2>About the Campaign</h2>
+
+<p>
+This student-led initiative raises awareness about anemia among adolescents and women. 
+The project focuses on education, early detection, and improving nutrition knowledge 
+through school workshops, community outreach, and digital awareness campaigns.
+</p>
+
+</section>
+
+<section id="research">
+
+<h2>Research & Key Facts</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>What is Anemia?</h3>
+<p>Anemia occurs when the body does not have enough healthy red blood cells 
+to carry oxygen to tissues.</p>
+</div>
+
+<div class="card">
+<h3>Main Causes</h3>
+<p>Iron deficiency, poor diet, chronic illness, and vitamin deficiencies.</p>
+</div>
+
+<div class="card">
+<h3>Why It Matters</h3>
+<p>Untreated anemia can affect concentration, immunity, and overall health.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="impact">
+
+<h2>Project Impact</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3 id="students">0</h3>
+<p>Students Educated</p>
+</div>
+
+<div class="stat">
+<h3 id="workshops">0</h3>
+<p>Workshops Conducted</p>
+</div>
+
+<div class="stat">
+<h3 id="volunteers">0</h3>
+<p>Volunteers</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Campaign Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1576765607924-bfbbe5baf6db">
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831">
+<img src="https://images.unsplash.com/photo-1581091870627-3c0f7c9d3e1b">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2>Anemia Awareness Quiz</h2>
+
+<div class="quiz">
+
+<p>Which nutrient deficiency is the most common cause of anemia?</p>
+
+<button onclick="checkAnswer('iron')">Iron</button>
+<button onclick="checkAnswer('vitaminC')">Vitamin C</button>
+<button onclick="checkAnswer('calcium')">Calcium</button>
+
+<p id="quizResult"></p>
+
+</div>
+
+</section>
+
+<section id="volunteer">
+
+<h2>Volunteer With Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Why would you like to join the campaign?"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Student Anemia Awareness Initiative</p>
+</footer>
+
+<script>
+
+function checkAnswer(answer){
+
+if(answer === 'iron'){
+document.getElementById("quizResult").innerHTML = "Correct! Iron deficiency is the most common cause.";
+}
+else{
+document.getElementById("quizResult").innerHTML = "Not quite. Try again!";
+}
+
+}
+
+function animateCounter(id, target){
+
+let count = 0;
+
+let interval = setInterval(function(){
+
+count += Math.ceil(target/50);
+
+if(count >= target){
+count = target;
+clearInterval(interval);
+}
+
+document.getElementById(id).innerText = count;
+
+},40);
+
+}
+
+animateCounter("students",500);
+animateCounter("workshops",12);
+animateCounter("volunteers",25);
+
+</script>
+
+</body>
+</html>
